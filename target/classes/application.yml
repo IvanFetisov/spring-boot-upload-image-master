@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+  spring:
+    datasource:
+      url:   jdbc:postgresql://localhost:5432/postgres&useUnicode=yes&characterEncoding=UTF-8
+      username: ivan
+      password: postgres
+      driver: Postgresql
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
