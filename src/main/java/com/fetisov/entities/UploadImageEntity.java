@@ -1,4 +1,4 @@
-package com.techgeeknext.entities;
+package com.fetisov.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,7 +10,6 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "image")
-@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,4 +28,6 @@ public class UploadImageEntity {
 
     @Column(name = "image", unique = false, nullable = false, length = 100000)
     private byte[] image;
+
+
 }

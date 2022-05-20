@@ -1,4 +1,4 @@
-package com.techgeeknext.services;
+package com.fetisov.services;
 
 import org.springframework.stereotype.Service;
 

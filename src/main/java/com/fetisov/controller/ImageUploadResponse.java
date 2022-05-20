@@ -1,4 +1,4 @@
-package com.techgeeknext.controller;
+package com.fetisov.controller;
 
 public class ImageUploadResponse {
     private String message;
