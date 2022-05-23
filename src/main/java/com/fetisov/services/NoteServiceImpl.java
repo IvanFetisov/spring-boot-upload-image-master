@@ -59,8 +59,8 @@ public class NoteServiceImpl {
         } catch (Exception exception) {
         }
         return outputStream.toByteArray();
-    }
-    public ResponseEntity<byte[]> getNoteById(Integer id){
+    }   
+    public ResponseEntity<byte[]> getNoteById( Integer id){
         Optional<Note> note = noteRepository.findById(id);
         return ResponseEntity
                 .ok().header(note.get().getText())
@@ -83,7 +83,7 @@ public class NoteServiceImpl {
         return ResponseEntity.status(HttpStatus.OK)
                 .body(new NoteUploadResponce("Image uploaded successfully: "));
     }
-
+   
     public void deleteNoteById (Integer id){
         Note note = noteRepository.findById(id).get();
         noteRepository.delete(note);

@@ -50,7 +50,7 @@ public class NoteController {
     @GetMapping("/main")
     public String main (){
 
-        return "";
+        return "/views/MainPage.html";
     }
 
 }
